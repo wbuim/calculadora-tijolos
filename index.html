@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="profile">
+            <img src="./assets/Logo.png" alt="Logo Pinhal">
+        </div>
+
+     <h2 style="color: yellow;">Cerâmica Pinhal</h2>
+     <h1>Selecione o Tijolo</h1>
+     <select id="tijolo">
+        <option value="Selecione o Tijolo">Selecione o Tijolo</option>
+        <option value="1.75">Tijolo Padrão 6 Furos - 9X14X19</option>
+        <option value="2.1">Tijolo 6 Furos - 9X14X24</option>
+        <option value="2.150">Tijolo 6 Furos - 11,5X14X24</option>
+        <option value="2.6">Tijolo 8 Furos - 9X19X24</option>
+        <option value="3.65">Tijolo 8 Furos - 11,5X19X24</option>
+        <option value="4.250">Tijolo 9 Furos - 14X19X24</option>
+        <option value="3.4">Lajota</option>
+     </select>
+     <input type="text" name="Quantidade de Tijolos" size="40" placeholder="Quantidade de Tijolos"
+     id="secondNumber" />
+        <input type="button" onClick="multiplyBy()" value="Calcular"> 
+        <p style="font-size: 20px;">O peso é de<br>
+            <span id = "result"></span> KG
+        </p>
+        <script>
+        function multiplyBy()
+        {
+          num1 = document.getElementById(
+            "tijolo").value;
+          num2 = document.getElementById(
+            "secondNumber").value;
+          document.getElementById(
+            "result").innerHTML = num1 * num2;
+        }
+      </script>  
+      </div>  
+    <div id="info">
+        <p>Rodovia 487, KM 328 S/N - Linha Pinhal - Cândido de Abreu - PR</p>
+        <p>ceramicapinhal@hotmail.com</p>
+        <p>(43) 9 9969 - 2858</p>
+    </div>
+</body>
+</html>

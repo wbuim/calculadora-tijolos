@@ -1,0 +1,21 @@
+body {
+    background-color: green;
+    
+}
+
+#profile {
+    text-align: center;
+
+}
+#profile img {
+    width: 150px;
+}
+#container {
+    text-align: center;
+    
+}
+
+#info {
+    padding: 100px;
+    text-align: center;
+}
