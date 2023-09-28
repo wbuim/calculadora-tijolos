@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="js/scripts.js"></script>
 </head>
 <body>
     <div id="container">
@@ -26,8 +27,8 @@
      </select>
      <input type="text" name="Quantidade de Tijolos" size="40" placeholder="Quantidade de Tijolos"
      id="secondNumber" />
-        <input type="button" onClick="multiplyBy()" value="Calcular"> 
-        <p style="font-size: 20px;">O peso é de<br>
+        <input id="botao" type="button" onClick="multiplyBy()" value="Calcular"> 
+        <p id='resultado'style="font-size: 20px;">O peso é de<br>
             <span id = "result"></span> KG
         </p>
         <script>
@@ -45,7 +46,12 @@
     <div id="info">
         <p>Rodovia 487, KM 328 S/N - Linha Pinhal - Cândido de Abreu - PR</p>
         <p>ceramicapinhal@hotmail.com</p>
-        <p>(43) 9 9969 - 2858</p>
+        <a href="https://wa.me/5543999692858" target="_blank">
+          <p>(43) 9 9969 - 2858</p>
+        </a>
+        <a href="https://wa.me/5543999692858" target="_blank">
+          <img src="./assets/wt.png" alt="whats">
+        </a>
     </div>
 </body>
 </html>

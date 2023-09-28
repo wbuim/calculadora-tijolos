@@ -16,14 +16,17 @@ body {
 }
 
 #info {
-    padding: 100px;
+    padding: 30px;
     text-align: center;
 }
 #tijolo {
     font-size: 20px;
-    width: 200px;
+    width: 400px;
 }
 #secondNumber {
     font-size: 20px;
     width: 200px;
+}
+#info img {
+    width: 50px;
 }
